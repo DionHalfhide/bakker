@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+<a href="">Home</a>
+<a href="">Assortiment </a>
+<a href="">Contact</a>
+
+</nav>
+<div id="scroll">
+<div class="w3-content w3-section" >
+  <img class="mySlides" src="img/brownie-dessert-cake-sweet-45202.jpeg">
+  <img class="mySlides" src="img/pexels-photo-140831.jpeg" >
+  <img class="mySlides" src="img/pexels-photo-236799.jpeg" >
+  <img class="mySlides" src="img/pexels-photo-434243.jpeg" >
+  <img class="mySlides" src="img/pexels-photo-219293.jpeg" >
+  <img class="mySlides" src="img/pexels-photo-85766.jpeg" >
+  <img class="mySlides" src="img/pexels-photo-760744.jpeg" >
+  
+</div>
+</div>
+<div id="name">
+     <h1>Bakker <br /> Klaas</h1>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<div id="deel1">
+    <h1>Bakker Klaas</h1>
+    <div id="floatt">
+    <h3>know your baker and know your food</h3>
+    </div>
+</div>
+ <div id="deel2">
+     <div id="blok3"><img src="img/cookie-with-fine-chips.png"></div>
+      <div id="blok2"><img src="img/cupcake.png"></div>
+      <div id="blok3"><img src="img/birthday-cake.png"></div>
+
+      
+    </div>
+
+</body>
+</html>
