@@ -1,66 +1,211 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="author" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakker Klaas</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ubuntu" rel="stylesheet">
 </head>
 
 <body>
-
-<nav>
-<a href="">Home</a>
-<a href="">Assortiment </a>
-<a href="">Contact</a>
-
-</nav>
-<div id="scroll">
-<div class="w3-content w3-section" >
-  <img class="mySlides" src="img/brownie-dessert-cake-sweet-45202.jpeg">
-  <img class="mySlides" src="img/pexels-photo-140831.jpeg" >
-  <img class="mySlides" src="img/pexels-photo-236799.jpeg" >
-  <img class="mySlides" src="img/pexels-photo-434243.jpeg" >
-  <img class="mySlides" src="img/pexels-photo-219293.jpeg" >
-  <img class="mySlides" src="img/pexels-photo-85766.jpeg" >
-  <img class="mySlides" src="img/pexels-photo-760744.jpeg" >
-  
-</div>
-</div>
-<div id="name">
-     <h1>Bakker <br /> Klaas</h1>
-</div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 2 seconds
-}
-</script>
-<div id="deel1">
-    <h1>Bakker Klaas</h1>
-    <div id="floatt">
-    <h3>know your baker and know your food</h3>
+    <div id="a"></div>
+    <ul>
+        <li class="nav-item active">
+            <a class="nav-link scroll" href="#a">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link scroll" href="#deel1" id="qq">Products </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link scroll" href="#cont">Contact</a>
+        </li>
+    </ul>
+    <div id="scroll">
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="img/brownie-dessert-cake-sweet-45202.jpeg">
+            <img class="mySlides" src="img/pexels-photo-140831.jpeg">
+            <img class="mySlides" src="img/pexels-photo-236799.jpeg">
+            <img class="mySlides" src="img/pexels-photo-434243.jpeg">
+            <img class="mySlides" src="img/pexels-photo-219293.jpeg">
+            <img class="mySlides" src="img/pexels-photo-85766.jpeg">
+            <img class="mySlides" src="img/pexels-photo-760744.jpeg">
+        </div>
     </div>
-</div>
- <div id="deel2">
-     <div id="blok3"><img src="img/cookie-with-fine-chips.png"></div>
-      <div id="blok2"><img src="img/cupcake.png"></div>
-      <div id="blok3"><img src="img/birthday-cake.png"></div>
+    <div id="name">
+        <h1>Bakker <br /> Klaas</h1>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
 
-      
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <div id="deel1">
+        <h1>Your favaorite food for your special ocasion's.</h1>
+        <h1>Learn the taste of quality food</h1>
+        <h1>And endjoy tasty of Klaas.</h1>
+    </div>
+    <div id="mm">
+        <div id="deel2">
+            <div id="blok3"><img src="img/cookie-with-fine-chips.png">
+                <h1>Cookie's</h1>
+            </div>
+            <div id="blok2"><img src="img/cupcake.png">
+                <h1>Cakes</h1>
+            </div>
+            <div id="blok3"><img src="img/birthday-cake.png">
+                <h1>Birthday Cake</h1>
+            </div>
+        </div>
+        <div id="deel3">
+            <div class="blok4">
+                <img src="img/pexels-photo-89690.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/cake.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/taart1.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/pexels-photo-189537.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/cake1.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/taart.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/pexels-photo-414552.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok4">
+                <img src="img/cakee.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+
+            <div class="blok4">
+                <img src="img/taaart.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+        </div>
     </div>
 
+    <div id="m">
+        <div id="deel0">
+            <div id="blok99"><img src="img/cookie-with-fine-chips.png">
+                <h1>Cookie's</h1>
+            </div>
+            <div class="blok0">
+                <img src="img/pexels-photo-89690.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok0">
+                <img src="img/cake.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok0">
+                <img src="img/taart1.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div id="blok99"><img src="img/cupcake.png">
+                <h1>Cakes</h1>
+            </div>
+            <div class="blok0">
+                <img src="img/pexels-photo-189537.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok0">
+                <img src="img/cake1.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok0">
+                <img src="img/taart.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div id="blok99"><img src="img/birthday-cake.png">
+                <h1>Birthday Cake</h1>
+            </div>
+            <div class="blok0">
+                <img src="img/pexels-photo-414552.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+            <div class="blok0">
+                <img src="img/cakee.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+
+            <div class="blok0">
+                <img src="img/taaart.jpeg">
+                <p>jhebjhadcvjhcv</p>
+            </div>
+        </div>
+    </div>
+    <div id="cont">
+        <h1>Stay in touch</h1>
+    </div>
+    <div id="contt">
+        <div id="blok"><img src="img/placeholder.png">
+            <h1>LOCATION</h1>
+            <h4>Wegastraat 29</h4>
+            <h4> 2516 AN, The Hague</h4>
+            <h4>Netherlands</h4>
+        </div>
+        <div id="blok"><img src="img/cooker.png">
+            <h1>OPENINGSTIJDEN</h1>
+            <h4>Ma 11.00 tot 20.00 - Di Gesloten</h4>
+            <h4>Wo - Do 11.00 tot 20.00 - Vr 11.00 tot 21.00</h4>
+            <h4>Za 13.00 tot 21.00 - Zo 15.00 tot 20.00</h4>
+        </div>
+        <div id="blok"><img src="img/telephone.png">
+            <h1>CONTACT INFO</h1>
+            <h4>Phone: +31 6 51110754</h4>
+            <h4>E-mail: info@BakkerKlaas.com</h4>
+        </div>
+    </div>
+    <div id="ff">
+        <div class="deelz"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19588.203817846384!2d4.4852420393648895!3d52.14295277954993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c68a1094a92f%3A0x2643e0415d662d55!2sConfectionery+Kallenberg!5e0!3m2!1sen!2snl!4v1518519442335" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div class="deelzz">
+            <h1>Social Media</h1>
+            <div class="media">
+                <a><img src="img/instagram.png"></a>
+            </div>
+            <div class="media">
+                <a><img src="img/twitter.png"></a>
+            </div>
+            <div class="media">
+                <a><img src="img/facebook.png"></a>
+            </div>
+        </div>
+        <div class="deelz"><img id="ll" src="img/winkel.png"></div>
+    </div>
+    <script src="js/main.js"></script>
+    <footer>
+        <h5>2017 © Copyrights BakkerKlaas</h5>
+    </footer>
 </body>
+
 </html>
